@@ -67,7 +67,8 @@ a:visited {
     opacity: 0;
 }
 
-.card__image-container:hover::after {
+.card__image-container:hover::after,
+.card__image-container:active::after {
     opacity: 1;
 }
 
