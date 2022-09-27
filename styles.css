@@ -26,6 +26,8 @@ body {
 
 a,
 a:visited {
+    font-weight: 600;
+    color: var(--cyan);
     text-decoration: none;
 }
 
@@ -151,4 +153,43 @@ hr {
 
 .card__author-link:hover {
     color: var(--cyan);
+}
+
+.attribution {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--soft-blue);
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        font-size: 5vw;
+    }
+
+    .card {
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        margin-top: 20vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin: 0;
+    }
 }
