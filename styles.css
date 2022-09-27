@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* BOILERPLATE STYLES  */
+
+:root {
+    --bradius: 20px;
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-background: hsl(217, 54%, 11%);
+    --card-background: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+
+    --font-size: 18px;
+
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--font-size);
+}
+
+body {
+    background-color: var(--main-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+/* CARD STYLES */
+
+.card {
+    color: var(--soft-blue);
+    letter-spacing: 0.07rem;
+
+    background-color: var(--card-background);
+    border-radius: var(--bradius);
+    margin: 1rem;
+    padding: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__image-container {
+    display: relative;
+}
+
+.card__overlay-img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.card__main-image {
+    width: 100%;
+    border-radius: var(--bradius);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__title {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card__title:hover {
+    color: var(--cyan);
+}
+
+.card__main-text {
+    font-weight: 300;
+}
+
+.card__values-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.card__balance,
+.card__time-remaining {
+    display: flex;
+    align-items: center;
+}
+
+.card__balance img,
+.card__time-remaining img {
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+.card__balance p,
+.card__time-remaining p {
+    margin: 0;
+}
+
+.card__balance p {
+    color: var(--cyan);
+}
+
+hr {
+    height: 1px;
+    border: none;
+    width: 100%;
+    color: var(--line-color);
+    background-color: var(--line-color);
+}
+
+.card__footer {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.card__author-image {
+    width: 2rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.card__author-link {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.card__author-link:hover {
+    color: var(--cyan);
+}
