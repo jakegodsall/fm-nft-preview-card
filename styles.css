@@ -46,21 +46,32 @@ a:visited {
 }
 
 .card__image-container {
-    display: relative;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: var(--bradius);
 }
 
-.card__overlay-img {
+.card__image-container::after {
+    content: url(images/icon-view.svg);
+    background-color: hsla(178, 100%, 50%, 0.5);
     position: absolute;
     margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.card__image-container:hover::after {
+    opacity: 1;
 }
 
 .card__main-image {
     width: 100%;
-    border-radius: var(--bradius);
+    display: block;
 }
 
 .card__content {
