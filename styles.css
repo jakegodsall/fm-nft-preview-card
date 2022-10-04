@@ -178,9 +178,6 @@ hr {
     body {
         font-size: 1.4rem;
     }
-
-    .card {
-    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -193,5 +190,15 @@ hr {
 
     .card {
         margin: 0;
+    }
+}
+
+@media screen and (max-height: 1000px) {
+    body {
+        justify-content: flex-start;
+    }
+
+    .card {
+        margin-top: 2rem;
     }
 }
