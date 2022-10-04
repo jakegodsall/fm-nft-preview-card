@@ -19,9 +19,11 @@
 
 body {
     background-color: var(--main-background);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 a,
@@ -178,7 +180,6 @@ hr {
     }
 
     .card {
-        margin-top: 20vw;
     }
 }
 
