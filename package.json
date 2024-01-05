@@ -1,0 +1,15 @@
+{
+  "name": "fm-nft-preview-card",
+  "version": "1.0.0",
+  "description": "This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server --baseDir='src/'"
+  },
+  "keywords": [],
+  "author": "Jake Godsall",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
