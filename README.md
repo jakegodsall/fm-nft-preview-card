@@ -1,20 +1,6 @@
 # Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Frontend Mentor - NFT preview card component solution](#frontend-mentor---nft-preview-card-component-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-  - [Author](#author)
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Overview
 
@@ -28,9 +14,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="card-finished.png" width=300px>
-
-
+<img src="./complete/card-finished.png" width=300px>
 
 ### Links
 
@@ -45,17 +29,23 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-### What I learned
+## Notes
 
-The most difficult aspect of this challenge was layering over the overlay on the main image. I achieved this by using the `::after` pseudo-element on the parent container of the image. This is the first time I have used pseudo-elements.
+This project was originally completed on 27th September 2022.
 
-### Continued development
+This repository is part of a series of repositories that have recently been cleaned and updated as part of an overhaul of my GitHub profile. The purpose of this overhaul was to ensure that each repository reflects my current development standards and practices, and to provide a cleaner, more professional appearance.
 
-I intend to improve the responsivity of this component so that is scales and is positioned correctly as the viewport changes.
+The project is updated as of 6th January 2024.
+
+The recent enhancements to the project include:
+
+- Created a node project with `lite-server`.
+- Added the view icon to the main image when in the `hover` state.
+- Moved to using relative units in CSS.
+- 
 
 ## Author
 
 - Website - [Jake Godsall](https://jakegodsall.com)
 - Frontend Mentor - [@jakegodsall](https://www.frontendmentor.io/profile/jakegodsall)
 - LinkedIn - [@godsalljake](https://www.linkedin.com/in/godsalljake/)
-
