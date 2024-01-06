@@ -3,7 +3,7 @@
 /* BOILERPLATE STYLES  */
 
 :root {
-  --bradius: 20rem;
+  --bradius: 2rem;
 
   --soft-blue: hsl(215, 51%, 70%);
   --cyan: hsl(178, 100%, 50%);
@@ -12,7 +12,14 @@
   --line-color: hsl(215, 32%, 27%);
 
   font-family: "Outfit", sans-serif;
-  font-size: var(--font-size);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -44,7 +51,7 @@ a:visited {
   background-color: var(--card-background);
   border-radius: var(--bradius);
   margin: 1rem;
-  padding: 1.2rem;
+  padding: 2.5rem;
 
   display: flex;
   flex-direction: column;
@@ -59,9 +66,10 @@ a:visited {
   align-items: center;
   justify-content: center;
   border-radius: var(--bradius);
+  margin-bottom: 2.4rem;
 }
 
-.card .card__main-image {
+.card__main-image {
   width: 100%;
   display: block;
 }
@@ -79,8 +87,9 @@ a:visited {
 .card__view-background {
   position: absolute;
   top: 0;
-  width: 42rem;
-  height: 42rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: var(--cyan);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -101,11 +110,13 @@ a:visited {
 }
 
 .card__title {
+  font-size: 2.2rem;
   color: white;
   font-weight: 400;
   margin-bottom: 0;
   transition: color 0.5s ease-in-out;
   cursor: pointer;
+  margin-bottom: 1.2rem;
 }
 
 .card__title:hover {
@@ -114,12 +125,14 @@ a:visited {
 
 .card__main-text {
   font-weight: 300;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
 }
 
 .card__values-flex {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .card__balance,
@@ -134,9 +147,18 @@ a:visited {
   margin-right: 0.5rem;
 }
 
+.card__balance img {
+  width: 1.1rem;
+}
+
+.card__time-remaining img {
+  width: 1.6rem;
+}
+
 .card__balance p,
 .card__time-remaining p {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .card__balance p {
@@ -149,20 +171,22 @@ hr {
   width: 100%;
   color: var(--line-color);
   background-color: var(--line-color);
+  margin-bottom: 1.6rem;
 }
 
 .card__footer {
   display: flex;
   align-items: center;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .card__author-image {
-  width: 2rem;
-  border: 0.2rem solid white;
+  width: 3.5rem;
+  border: 0.1rem solid white;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: 1.6rem;
 }
 
 .card__author-link {
@@ -178,6 +202,8 @@ hr {
   margin-top: 2rem;
   text-align: center;
   color: var(--soft-blue);
+  font-size: 1.6rem;
+  padding-bottom: 10rem;
 }
 
 @media screen and (min-width: 400px) {
@@ -186,7 +212,7 @@ hr {
   }
 
   .card {
-    max-width: 42rem;
+    max-width: 35rem;
   }
 }
 

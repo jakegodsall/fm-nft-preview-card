@@ -42,7 +42,7 @@ The recent enhancements to the project include:
 - Created a node project with `lite-server`.
 - Added the view icon to the main image when in the `hover` state.
 - Moved to using relative units in CSS.
-- 
+- Fixed the desktop layout.
 
 ## Author
 
